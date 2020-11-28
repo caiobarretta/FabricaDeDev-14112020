@@ -189,131 +189,173 @@ namespace TiposEVariáveis
             //21/11/2020
             //  Tipos struct:
             //      Tipos definidos pelo usuário do formulário struct S {...}
-            Aluno aluno;
-            aluno.CodigoAluno = 1;
-            aluno.Nome = "Nome do aluno";
-            aluno.Idade = 18;
-            aluno.Nota = 10.00F;
-            Console.WriteLine("Nome do aluno: {0}", aluno.Nome);
-            Console.WriteLine("Idade do aluno: {0}", aluno.Idade);
-            Console.WriteLine("Nota do aluno: {0}", aluno.Nota);
+            //Aluno aluno;
+            //aluno.CodigoAluno = 1;
+            //aluno.Nome = "Nome do aluno";
+            //aluno.Idade = 18;
+            //aluno.Nota = 10.00F;
+            //Console.WriteLine("Nome do aluno: {0}", aluno.Nome);
+            //Console.WriteLine("Idade do aluno: {0}", aluno.Idade);
+            //Console.WriteLine("Nota do aluno: {0}", aluno.Nota);
 
-            Professor professor;
-            professor.Nome = "Nome do professor";
-            professor.Idade = 27;
-            Console.WriteLine("Nome do professor: {0}", professor.Nome);
-            Console.WriteLine("Idade do professor: {0}", professor.Idade);
+            //Professor professor;
+            //professor.Nome = "Nome do professor";
+            //professor.Idade = 27;
+            //Console.WriteLine("Nome do professor: {0}", professor.Nome);
+            //Console.WriteLine("Idade do professor: {0}", professor.Idade);
 
-            Aluno aluno2;
-            aluno2.CodigoAluno = 1;
-            aluno2.Nome = "Aluno 2";
-            aluno2.Idade = 19;
-            aluno2.Nota = 9.0F;
+            //Aluno aluno2;
+            //aluno2.CodigoAluno = 1;
+            //aluno2.Nome = "Aluno 2";
+            //aluno2.Idade = 19;
+            //aluno2.Nota = 9.0F;
 
-            try
-            {
-                //"Teste".Equals(null);
-                var ehAluno = aluno.CompareTo(aluno2) == 1;
-                if (ehAluno)
-                {
-                    Console.WriteLine("Bem vindo Aluno: {0}", aluno.Nome);
-                }
-                else
-                {
-                    Console.WriteLine("Acesso Proibido!");
-                }
-            }
-            catch (NotSupportedException ex)
-            {
-                Console.WriteLine("Erro de comparação: {0}", ex.Message);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Erro: {0}", ex.Message);
-            }
+            //try
+            //{
+            //    //"Teste".Equals(null);
+            //    var ehAluno = aluno.CompareTo(aluno2) == 1;
+            //    if (ehAluno)
+            //    {
+            //        Console.WriteLine("Bem vindo Aluno: {0}", aluno.Nome);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Acesso Proibido!");
+            //    }
+            //}
+            //catch (NotSupportedException ex)
+            //{
+            //    Console.WriteLine("Erro de comparação: {0}", ex.Message);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine("Erro: {0}", ex.Message);
+            //}
 
-            //Console.ReadKey();
+            ////Console.ReadKey();
 
-            //  Tipos de valor Anuláveis:
-            //      Extensões de todos os outros tipos de valor com um valor null
-            sbyte? valorMaximoDeUmSByte = sbyte.MaxValue;
-            sbyte? valorMinimoDeUmSByte = sbyte.MinValue;
+            ////  Tipos de valor Anuláveis:
+            ////      Extensões de todos os outros tipos de valor com um valor null
+            //sbyte? valorMaximoDeUmSByte = sbyte.MaxValue;
+            //sbyte? valorMinimoDeUmSByte = sbyte.MinValue;
 
-            Console.WriteLine("Valor máximo de um sbyte: {0}", valorMaximoDeUmSByte);
-            Console.WriteLine("Valor mínimo de um sbyte: {0}", valorMinimoDeUmSByte);
+            //Console.WriteLine("Valor máximo de um sbyte: {0}", valorMaximoDeUmSByte);
+            //Console.WriteLine("Valor mínimo de um sbyte: {0}", valorMinimoDeUmSByte);
 
-            short? valorMaximoDeUmShort = short.MaxValue;
-            short? valorMínimoDeUmShort = short.MinValue;
-            Console.WriteLine("Valor máximo de um short: {0}", valorMaximoDeUmShort);
-            Console.WriteLine("Valor mínimo de um short: " + valorMínimoDeUmShort);
+            //short? valorMaximoDeUmShort = short.MaxValue;
+            //short? valorMínimoDeUmShort = short.MinValue;
+            //Console.WriteLine("Valor máximo de um short: {0}", valorMaximoDeUmShort);
+            //Console.WriteLine("Valor mínimo de um short: " + valorMínimoDeUmShort);
 
-            int? valorMaximoDeUmInteiro = int.MaxValue;
-            int? valorMinimoDeUmInteiro = int.MinValue;
-            Console.WriteLine($"Valor Máximo de um Inteiro: {valorMaximoDeUmInteiro}");
-            string valorMinimoDeUmInteiroTexto = "Valor Mínimo de " +
-                "um Intero:" +
-                $"{valorMinimoDeUmInteiro}";
-            Console.WriteLine(valorMinimoDeUmInteiroTexto);
+            //int? valorMaximoDeUmInteiro = int.MaxValue;
+            //int? valorMinimoDeUmInteiro = int.MinValue;
+            //Console.WriteLine($"Valor Máximo de um Inteiro: {valorMaximoDeUmInteiro}");
+            //string valorMinimoDeUmInteiroTexto = "Valor Mínimo de " +
+            //    "um Intero:" +
+            //    $"{valorMinimoDeUmInteiro}";
+            //Console.WriteLine(valorMinimoDeUmInteiroTexto);
 
-            string malandragemDoChute = string.Empty;
-            malandragemDoChute += "";
+            //string malandragemDoChute = string.Empty;
+            //malandragemDoChute += "";
 
-            long? valorMaximoDeUmLong = long.MaxValue;
-            long? valorMinimoDeUmLong = long.MinValue;
+            //long? valorMaximoDeUmLong = long.MaxValue;
+            //long? valorMinimoDeUmLong = long.MinValue;
 
-            string sugestaoDePularLinhaDoChute = "Valor Máximo de" + "\n" +
-                "um long" + "\n" +
-                $"{valorMaximoDeUmLong}";
-            Console.WriteLine(sugestaoDePularLinhaDoChute);
+            //string sugestaoDePularLinhaDoChute = "Valor Máximo de" + "\n" +
+            //    "um long" + "\n" +
+            //    $"{valorMaximoDeUmLong}";
+            //Console.WriteLine(sugestaoDePularLinhaDoChute);
 
-            string sugestaoDePularLinhaMaisElegante = "Valor Mínimo de" + Environment.NewLine
-                + "um long" + Environment.NewLine +
-                $"{valorMinimoDeUmLong}";
-            Console.WriteLine(sugestaoDePularLinhaMaisElegante);
+            //string sugestaoDePularLinhaMaisElegante = "Valor Mínimo de" + Environment.NewLine
+            //    + "um long" + Environment.NewLine +
+            //    $"{valorMinimoDeUmLong}";
+            //Console.WriteLine(sugestaoDePularLinhaMaisElegante);
 
-            int? quantidadeDeProdutos = 0;
-            //0:0/1:2^0/2:2^1
-            if (quantidadeDeProdutos == null)//(!quantidadeDeProdutos.HasValue)
-            {
-                //To-do
-            }
+            //int? quantidadeDeProdutos = 0;
+            ////0:0/1:2^0/2:2^1
+            //if (quantidadeDeProdutos == null)//(!quantidadeDeProdutos.HasValue)
+            //{
+            //    //To-do
+            //}
 
-            var EhMaladragemMesmo = string.IsNullOrEmpty(malandragemDoChute);
+            //var EhMaladragemMesmo = string.IsNullOrEmpty(malandragemDoChute);
 
-            int? CodigoPerfilUsuario = null;
+            //int? CodigoPerfilUsuario = null;
 
-            Console.WriteLine($"Valor do Código Perfil Usuario: {CodigoPerfilUsuario}");
-            Console.WriteLine($"tem Valor no Código Perfil Usuario?: {CodigoPerfilUsuario.HasValue}");
-            //Lança um erro, pois a referencia do objeto é nulas
-            //Console.WriteLine($"Valor do Código Perfil Usuario: {CodigoPerfilUsuario.Value}");
+            //int? ReviewNullabel = 0;
+            //int valor = ReviewNullabel.HasValue ? ReviewNullabel.Value : 0;
+            //ReviewNullabel.GetValueOrDefault();
 
-            var valorCodigoPerfilUsuario = CodigoPerfilUsuario.GetValueOrDefault();
-            Console.WriteLine($"Valor do CódigoPerfil Usuario: {valorCodigoPerfilUsuario}");
+            //Console.WriteLine($"Valor do Código Perfil Usuario: {CodigoPerfilUsuario}");
+            //Console.WriteLine($"tem Valor no Código Perfil Usuario?: {CodigoPerfilUsuario.HasValue}");
+            ////Lança um erro, pois a referencia do objeto é nulas
+            ////Console.WriteLine($"Valor do Código Perfil Usuario: {CodigoPerfilUsuario.Value}");
 
-            //  Tipos de valor tupla:
-            //      Tipos definidos pelo usuário do formulário (T1, t2, ...)
-            (double, double) valorDaTuplaDouble = (-1.0, 1.0);
-            Console.WriteLine("Primeiro valor da tupla: {0}", valorDaTuplaDouble.Item1);
-            Console.WriteLine(" segundo valodr da tupla:{0}", valorDaTuplaDouble.Item2);
+            //var valorCodigoPerfilUsuario = CodigoPerfilUsuario.GetValueOrDefault();
+            //Console.WriteLine($"Valor do CódigoPerfil Usuario: {valorCodigoPerfilUsuario}");
 
-            var coordenadaCartesiana = (x: 1.0, y: 2.0);
-            Console.WriteLine("Coordenada Cartesiana x: {0}", coordenadaCartesiana.x);
-            Console.WriteLine("Coordenada Cartesiana y: {0}", coordenadaCartesiana.y);
-            //ou
-            var (x1, y1) = (0.0, 0.0);
-            Console.WriteLine("Coordenada Cartesiana: x:{0} e y:{1}", x1, y1);
+            ////  Tipos de valor tupla:
+            ////      Tipos definidos pelo usuário do formulário (T1, t2, ...)
+            //(double, double) valorDaTuplaDouble = (-1.0, 1.0);
+            //Console.WriteLine("Primeiro valor da tupla: {0}", valorDaTuplaDouble.Item1);
+            //Console.WriteLine(" segundo valodr da tupla:{0}", valorDaTuplaDouble.Item2);
 
-            var retornoExemploTupla = aluno.ExemploTupla();
-            Console.WriteLine("Retorno do ExemploTupla:");
-            Console.WriteLine("Nome: {0}", retornoExemploTupla.Item1);
-            Console.WriteLine("Idade: {0}", retornoExemploTupla.Item2);
-            Console.WriteLine("Nota: {0}", retornoExemploTupla.Item3);
+            //var coordenadaCartesiana = (x: 1.0, y: 2.0);
+            //Console.WriteLine("Coordenada Cartesiana x: {0}", coordenadaCartesiana.x);
+            //Console.WriteLine("Coordenada Cartesiana y: {0}", coordenadaCartesiana.y);
+            ////ou
+            //var (x1, y1) = (0.0, 0.0);
+            //Console.WriteLine("Coordenada Cartesiana: x:{0} e y:{1}", x1, y1);
+
+            //var retornoExemploTupla = aluno.ExemploTupla();
+            //Console.WriteLine("Retorno do ExemploTupla:");
+            //Console.WriteLine("Nome: {0}", retornoExemploTupla.Item1);
+            //Console.WriteLine("Idade: {0}", retornoExemploTupla.Item2);
+            //Console.WriteLine("Nota: {0}", retornoExemploTupla.Item3);
 
             //Tipo Referência
-            Usuario usuario = new Usuario();
-            var usuario2 = new Usuario();
+            //Usuario usuario = new Usuario();
+            //var usuario2 = new Usuario();
 
-            usuario.
+            //UsuarioFilho filho = new UsuarioFilho();
+            //filho.SalvarUsuario("Teste", 1);
+
+            //Usuario usuario = new Usuario();
+            //Console.WriteLine($"Nome do usuário:{usuario.Nome}");
+            //var nome = Console.ReadLine();
+            //try
+            //{
+            //    usuario.Nome = nome;
+            //}
+            //catch(ArgumentException ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+
+            //Console.WriteLine($"Nome do usuário:{usuario.Nome}");
+
+            //var usuarios = new Usuario();
+            //usuarios[0] = 1;
+            //Console.WriteLine("usuarios[0]:" + usuarios[0]);
+
+            //var usuarios = new Usuario();
+            //usuarios[0] = new Perfil()
+            //{
+            //    Codigo = 1,
+            //    Nome = "Administrador"
+            //};
+
+            //Console.WriteLine("Nome do primeiro Perfil: {0}", usuarios[0].SalvarPerfil());
+
+            var usuarios = new Usuario();
+            usuarios.AdicionarPerfil(0, new Perfil()
+            {
+                Codigo = 1,
+                Nome = "Administrador"
+            });
+
+            Console.WriteLine("Nome do primeiro Perfil: {0}", usuarios[0].Nome);
+
         }
 
         static void AlteraTeste(TesteTipoReferencia teste)

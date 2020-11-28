@@ -6,6 +6,22 @@ namespace TiposEVariáveis.TipoReferencia
 {
     class UsuarioFilho : Usuario, IComparable, IConvertible
     {
+        public UsuarioFilho() : base()
+        {
+
+        }
+
+        public override void SalvarUsuario(string nome, int codigoUsuario = 0)
+        {
+            Console.WriteLine("Override Salvar Usuario");
+        }
+
+        //public void SalvarUsuario(string nome, decimal comissao, int codigoUsuario = 0)
+        //{
+        //    base.SalvarUsuario(nome, codigoUsuario);
+        //    //Todo
+        //}
+
         public void ExibirMetodoProtegido() => base.MetodoProtegido();
 
         public int CompareTo(object obj)
