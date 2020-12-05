@@ -1,0 +1,8 @@
+﻿Exercício 1:
+
+Tipos Valor:
+1-Criar repositório publico Exercicios-FabricaDeDev-05122020
+2-Clonar.
+3-Criar Solução Console App .NET Core 3.x
+4-Construir tabela mínimo e máximo do tipo valor.
+5-Atualizar repositório
