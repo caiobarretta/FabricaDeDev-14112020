@@ -1,0 +1,14 @@
+Exercício 02 – Crie a classe "Retangulo" com os campos privados "largura" e "altura" do tipo double.
+Crie um construtor padrão (sem parâmetros) que inicie os campos da classe com o valor 1.0. 
+Crie um construtor que receba valores de largura e altura e inicialize os campos da classe com esses valores.
+
+A classe deve conter propriedades para recuperar o valor dos seus atributos. 
+Os métodos que alteram os atributos devem verificar se o valor entrado para largura ou altura é maior ou igual a 1.0 e menor ou igual a 20.0.
+Caso o valor não seja válido imprima uma mensagem de erro e não altere o atributo.
+A classe deve ter métodos para calcular o perímetro ("double calculaPerimetro()") e a área ("double calculaArea()").
+
+Faça um programa de teste que crie três objetos do tipo "Retangulo", defina uma largura e altura; e exiba o valor da largura, altura, perímetro e área.
+
+Dica: Fórmulas do perímetro e área de um retângulo:
+Perímetro = 2.0 * (largura + altura);
+Área = largura * altura;

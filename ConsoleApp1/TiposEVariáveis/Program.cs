@@ -140,9 +140,43 @@ namespace TiposEVariáveis
             //Console.WriteLine("O Valor foi convertido com sucesso?: {0}", convertidoComSucessoValorDeVinte);
             //Console.WriteLine("O Valor: {0}", resultadoDaConversaoDeVinte);
 
-            ////Console.Write("Entre com um valor numerico: ");
-            //////var valorDigitadoEhInteiro = int.TryParse(Console.ReadLine(), out int valorDigitado);
-            //////Console.WriteLine("O Valor Digitado está certo?:{0} foi: {1}", valorDigitadoEhInteiro, valorDigitado);
+            //Console.Write("Entre com um valor numerico: ");
+            //var valorDigitadoTexto = Console.ReadLine();
+            //var valorDigitadoEhInteiro = int.TryParse(valorDigitadoTexto, out int valorDigitado);
+            //if (valorDigitadoEhInteiro)
+            //{
+            //    Console.WriteLine("Valor válido:{0}", valorDigitadoTexto);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Valor inválido:{0}", valorDigitadoTexto);
+            //}
+            //Console.WriteLine("O Valor Digitado está certo?:{0} foi: {1}", valorDigitadoEhInteiro, valorDigitado);
+
+            Console.Write("Entre com um valor numerico: ");
+            var valorDigitadoTexto = Console.ReadLine();
+            var valorDigitadoEhInteiro = int.TryParse(valorDigitadoTexto, out int valorDigitado);
+            if (valorDigitadoEhInteiro)
+            {
+                Console.WriteLine("Valor válido:{0}", valorDigitadoTexto);
+                // Operador: || (OU)
+                // Operador: && (E)
+                // Operador: ! (Não)
+                if (valorDigitado <= sbyte.MaxValue && valorDigitado >= sbyte.MinValue)
+                {
+                    Console.WriteLine("Melhor tipo para ser armazenado é o sbyte!");
+                }
+                else
+                {
+                    Console.WriteLine("Implemente Você!");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Valor inválido:{0}", valorDigitadoTexto);
+            }
+
+            
 
             ////var valorDigitadoTexto = string.Empty;
             ////try
@@ -347,14 +381,14 @@ namespace TiposEVariáveis
 
             //Console.WriteLine("Nome do primeiro Perfil: {0}", usuarios[0].SalvarPerfil());
 
-            var usuarios = new Usuario();
-            usuarios.AdicionarPerfil(0, new Perfil()
-            {
-                Codigo = 1,
-                Nome = "Administrador"
-            });
+            //var usuarios = new Usuario();
+            //usuarios.AdicionarPerfil(0, new Perfil()
+            //{
+            //    Codigo = 1,
+            //    Nome = "Administrador"
+            //});
 
-            Console.WriteLine("Nome do primeiro Perfil: {0}", usuarios[0].Nome);
+            //Console.WriteLine("Nome do primeiro Perfil: {0}", usuarios[0].Nome);
 
         }
 

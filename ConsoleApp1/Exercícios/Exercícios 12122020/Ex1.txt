@@ -1,0 +1,11 @@
+Exercício 01 – Crie a classe "Lampada" para representar uma lâmpada.
+Crie propriedades:
+string estado; → representa o estado da lâmpada, podendo receber dois valores: "ligada" ou "desligada";
+
+Crie os métodos públicos:
+Crie um construtor padrão (sem parâmetros) que inicialize o campo estado para "desligada";
+void acende(); - Representa o ato de ligar a lâmpada. Deve modificar o campo estado para "ligada";
+void apaga(); - Representa o ato de desligar a lâmpada. Deve modificar o campo estado para "desligada";
+void mostraEstado(); - Representa o ato de olharmos para lâmpada para saber se ela está acesa ou apagada.  Deve mostrar, dependendo do estado da lâmpada, as seguintes mensagens na tela: "Lâmpada Acesa!" ou "Lâmpada Apagada";
+
+Crie um programa com 2 objetos do tipo "Lampada" e chame os seus métodos;

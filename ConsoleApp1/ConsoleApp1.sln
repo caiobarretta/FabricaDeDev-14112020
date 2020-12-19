@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "ConsoleApp1\HelloWorld.csproj", "{A9993F98-173A-464F-A6B5-396BD7B1C4B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiposEVariáveis", "TiposEVariáveis\TiposEVariáveis.csproj", "{A2DA3F01-C6A0-404A-9BD3-682A80617632}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TiposEVariáveis", "TiposEVariáveis\TiposEVariáveis.csproj", "{A2DA3F01-C6A0-404A-9BD3-682A80617632}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
